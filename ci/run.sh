@@ -2,6 +2,7 @@
 set -ev
 BINROOT=node_modules/.bin
 npm i --loglevel=warn
+$BINROOT/greenkeeper-lockfile-update
 case "${TEST}" in
   unit)
     npm t
@@ -15,3 +16,4 @@ case "${TEST}" in
     exit 1
     ;;
 esac
+$BINROOT/greenkeeper-lockfile-upload

@@ -24,8 +24,5 @@ matrix:
 script:
   - ci/run.sh
 
-before_script: greenkeeper-lockfile-update
-after_script: greenkeeper-lockfile-upload
-
 cache:
   - "node_modules"
