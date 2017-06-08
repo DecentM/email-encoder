@@ -1,0 +1,21 @@
+language: node_js
+install: true
+
+node_js:
+  - '8'
+  - '6'
+
+os:
+  - linux
+  - osx
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - os: osx
+
+script:
+  - ci/run.sh
+
+cache:
+  - "node_modules"
