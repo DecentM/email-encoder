@@ -1,6 +1,6 @@
 {
   "name": "email-encoder",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A module and cli that encodes email addresses in a string into HTML entities",
   "license": "MIT",
   "repository": "DecentM/email-encoder",
