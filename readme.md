@@ -1,6 +1,4 @@
-# email-encoder [![Build Status](https://travis-ci.org/DecentM/email-encoder.svg?branch=master)](https://travis-ci.org/DecentM/email-encoder)
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/DecentM/email-encoder.svg)](https://greenkeeper.io/)
+# email-encoder [![Build Status](https://travis-ci.org/DecentM/email-encoder.svg?branch=master)](https://travis-ci.org/DecentM/email-encoder) [![Greenkeeper badge](https://badges.greenkeeper.io/DecentM/email-encoder.svg)](https://greenkeeper.io/)
 
 > A module and cli that encodes email addresses in a string into HTML entities
 
