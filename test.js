@@ -25,6 +25,12 @@ test('encode multiple emails', (t) => {
   t.is(string, '&#x65;&#x6D;&#x61;&#x69;&#x6C;&#x40;&#x73;&#x6F;&#x6D;&#x65;&#x74;&#x68;&#x69;&#x6E;&#x67;&#x2E;&#x63;&#x6F;&#x6D; &#x65;&#x6C;&#x73;&#x65;&#x40;&#x65;&#x78;&#x61;&#x6D;&#x70;&#x6C;&#x65;&#x2E;&#x6E;&#x65;&#x74;')
 })
 
+test('leaves HTML alone', (t) => {
+  const string = encoder('<span>email@example.com</span>')
+
+  t.is(string, '<span>&#x65;&#x6D;&#x61;&#x69;&#x6C;&#x40;&#x65;&#x78;&#x61;&#x6D;&#x70;&#x6C;&#x65;&#x2E;&#x63;&#x6F;&#x6D;</span>')
+})
+
 test('throws an error if nothing is passed', (t) => {
   t.throws(() => {
     encoder()

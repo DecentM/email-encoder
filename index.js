@@ -1,4 +1,4 @@
-const getEmails = require('get-emails')
+const getEmails = require('emails-in-string')
 const he = require('he')
 
 module.exports = (input) => {
