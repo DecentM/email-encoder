@@ -15,8 +15,8 @@ $ npm install email-encoder
 ```js
 const emailEncoder = require('email-encoder');
 
-emailEncoder('unicorns');
-//=> 'unicorns & rainbows'
+emailEncoder('My email is my-email@example.com');
+//=> 'My email is &#x6D;&#x79;&#x2D;&#x65;&#x6D;&#x61;&#x69;&#x6C;&#x40;&#x65;&#x78;&#x61;&#x6D;&#x70;&#x6C;&#x65;&#x2E;&#x63;&#x6F;&#x6D;'
 ```
 
 
@@ -28,12 +28,15 @@ emailEncoder('unicorns');
 
 Type: `string`
 
-Lorem ipsum.
-
-## CLI
+## Command line usage
 
 ```
 $ npm install --global email-encoder
+```
+
+```
+$ email-encoder 'My email is my-email@example.com'
+My email is &#x6D;&#x79;&#x2D;&#x65;&#x6D;&#x61;&#x69;&#x6C;&#x40;&#x65;&#x78;&#x61;&#x6D;&#x70;&#x6C;&#x65;&#x2E;&#x63;&#x6F;&#x6D;
 ```
 
 ```
