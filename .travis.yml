@@ -9,10 +9,17 @@ os:
   - linux
   - osx
 
+env:
+  - TEST=lint
+  - TEST=unit
+
 matrix:
   fast_finish: true
   allow_failures:
     - os: osx
+  exclude:
+    - node_js: '6'
+      env: TEST=unit
 
 script:
   - ci/run.sh
