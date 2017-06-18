@@ -14,8 +14,9 @@ module.exports = (input) => {
     const encoded = he.encode(email, {
       'encodeEverything': true
     })
+    const regexp = new RegExp(email, 'g')
 
-    output = output.replace(email, encoded)
+    output = output.replace(regexp, encoded)
   })
   return output
 }
