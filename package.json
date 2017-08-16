@@ -1,7 +1,7 @@
 {
   "name": "email-encoder",
-  "version": "1.0.2",
-  "description": "A module and cli that encodes email addresses in a string into HTML entities",
+  "version": "1.0.4",
+  "description": "Helps protect e-mail addresses from spambots",
   "license": "MIT",
   "repository": "git@github.com:decentm/email-encoder.git",
   "author": {
